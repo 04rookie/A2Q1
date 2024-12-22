@@ -3,7 +3,7 @@
 This project implements and analyzes an efficient **MPI (Message Passing Interface)** program to sort small integers in distributed memory. The program is designed to handle an array of signed 16-bit integers distributed across multiple processors, ensuring efficient sorting with minimal all-to-all data exchange.
 
 ## Key Features
-- **Distributed Array**: The input array X = [x_0, x_1, \dots, x_{n-1}] is divided into p partitions ( X_0, X_1, \dots, X_{p-1} ), where each partition resides in the memory of a processor.
+- **Distributed Array**: The input array X = [x_0, x_1, ....., x_n-1] is divided into p partitions ( X_0, X_1, ....., X_p-1 ), where each partition resides in the memory of a processor.
 - **Sorting Guarantee**: Ensures that for i < j, all keys assigned to processor i are less than or equal to those assigned to processor j.
 - **Efficient Communication**: Avoids large-scale all-to-all data exchanges for better performance in distributed environments.
 - **Key Assignment**: Guarantees that duplicate keys (x_i = x_j) are assigned to the same processor.
